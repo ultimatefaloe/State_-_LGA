@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="">
+         <!-- Abia LGAs -->
+         <optgroup label="Abia State">
+            <option value="Aba North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aba North') ? 'selected' : ''; ?>>Aba North</option>
+            <option value="Aba South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aba South') ? 'selected' : ''; ?>>Aba South</option>
+            <option value="Arochukwu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Arochukwu') ? 'selected' : ''; ?>>Arochukwu</option>
+            <option value="Bende" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bende') ? 'selected' : ''; ?>>Bende</option>
+            <option value="Ikwuano" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikwuano') ? 'selected' : ''; ?>>Ikwuano</option>
+            <option value="Isiala-Ngwa North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isiala-Ngwa North') ? 'selected' : ''; ?>>Isiala-Ngwa North</option>
+            <option value="Isiala-Ngwa South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isiala-Ngwa South') ? 'selected' : ''; ?>>Isiala-Ngwa South</option>
+            <option value="Isuikwato" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isuikwato') ? 'selected' : ''; ?>>Isuikwato</option>
+            <option value="Obi Nwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obi Nwa') ? 'selected' : ''; ?>>Obi Nwa</option>
+            <option value="Ohafia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ohafia') ? 'selected' : ''; ?>>Ohafia</option>
+            <option value="Osisioma" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Osisioma') ? 'selected' : ''; ?>>Osisioma</option>
+            <option value="Ngwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ngwa') ? 'selected' : ''; ?>>Ngwa</option>
+            <option value="Ugwunagbo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ugwunagbo') ? 'selected' : ''; ?>>Ugwunagbo</option>
+            <option value="Ukwa East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ukwa East') ? 'selected' : ''; ?>>Ukwa East</option>
+            <option value="Ukwa West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ukwa West') ? 'selected' : ''; ?>>Ukwa West</option>
+            <option value="Umuahia North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Umuahia North') ? 'selected' : ''; ?>>Umuahia North</option>
+            <option value="Umuahia South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Umuahia South') ? 'selected' : ''; ?>>Umuahia South</option>
+            <option value="Umu-Neochi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Umu-Neochi') ? 'selected' : ''; ?>>Umu-Neochi</option>
+        </optgroup>
+         <!-- Adamawa LGAs -->
+        <optgroup label="Adamawa State">
+            <option value="Demsa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Demsa') ? 'selected' : ''; ?>>Demsa</option>
+            <option value="Fufore" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Fufore') ? 'selected' : ''; ?>>Fufore</option>
+            <option value="Ganaye" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ganaye') ? 'selected' : ''; ?>>Ganaye</option>
+            <option value="Gireri" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gireri') ? 'selected' : ''; ?>>Gireri</option>
+            <option value="Gombi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gombi') ? 'selected' : ''; ?>>Gombi</option>
+            <option value="Guyuk" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Guyuk') ? 'selected' : ''; ?>>Guyuk</option>
+            <option value="Hong" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Hong') ? 'selected' : ''; ?>>Hong</option>
+            <option value="Jada" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jada') ? 'selected' : ''; ?>>Jada</option>
+            <option value="Lamurde" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Lamurde') ? 'selected' : ''; ?>>Lamurde</option>
+            <option value="Madagali" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Madagali') ? 'selected' : ''; ?>>Madagali</option>
+            <option value="Maiha" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Maiha') ? 'selected' : ''; ?>>Maiha</option>
+            <option value="Mayo-Belwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mayo-Belwa') ? 'selected' : ''; ?>>Mayo-Belwa</option>
+            <option value="Michika" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Michika') ? 'selected' : ''; ?>>Michika</option>
+            <option value="Mubi North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mubi North') ? 'selected' : ''; ?>>Mubi North</option>
+            <option value="Mubi South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mubi South') ? 'selected' : ''; ?>>Mubi South</option>
+            <option value="Numan" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Numan') ? 'selected' : ''; ?>>Numan</option>
+            <option value="Shelleng" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shelleng') ? 'selected' : ''; ?>>Shelleng</option>
+            <option value="Song" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Song') ? 'selected' : ''; ?>>Song</option>
+            <option value="Toungo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Toungo') ? 'selected' : ''; ?>>Toungo</option>
+            <option value="Yola North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yola North') ? 'selected' : ''; ?>>Yola North</option>
+            <option value="Yola South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yola South') ? 'selected' : ''; ?>>Yola South</option>
+        </optgroup>
+        <!-- Anambra LGAs -->
+        <optgroup label="Anambra State">
+            <option value="Aguata" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aguata') ? 'selected' : ''; ?>>Aguata</option>
+            <option value="Anambra East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Anambra East') ? 'selected' : ''; ?>>Anambra East</option>
+            <option value="Anambra West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Anambra West') ? 'selected' : ''; ?>>Anambra West</option>
+            <option value="Anaocha" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Anaocha') ? 'selected' : ''; ?>>Anaocha</option>
+            <option value="Awka North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Awka North') ? 'selected' : ''; ?>>Awka North</option>
+            <option value="Awka South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Awka South') ? 'selected' : ''; ?>>Awka South</option>
+            <option value="Ayamelum" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ayamelum') ? 'selected' : ''; ?>>Ayamelum</option>
+            <option value="Dunukofia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dunukofia') ? 'selected' : ''; ?>>Dunukofia</option>
+            <option value="Ekwusigo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ekwusigo') ? 'selected' : ''; ?>>Ekwusigo</option>
+            <option value="Idemili North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Idemili North') ? 'selected' : ''; ?>>Idemili North</option>
+            <option value="Idemili South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Idemili South') ? 'selected' : ''; ?>>Idemili South</option>
+            <option value="Ihiala" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ihiala') ? 'selected' : ''; ?>>Ihiala</option>
+            <option value="Njikoka" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Njikoka') ? 'selected' : ''; ?>>Njikoka</option>
+            <option value="Nnewi North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nnewi North') ? 'selected' : ''; ?>>Nnewi North</option>
+            <option value="Nnewi South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nnewi South') ? 'selected' : ''; ?>>Nnewi South</option>
+            <option value="Ogbaru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogbaru') ? 'selected' : ''; ?>>Ogbaru</option>
+            <option value="Onitsha North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Onitsha North') ? 'selected' : ''; ?>>Onitsha North</option>
+            <option value="Onitsha South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Onitsha South') ? 'selected' : ''; ?>>Onitsha South</option>
+            <option value="Orumba North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Orumba North') ? 'selected' : ''; ?>>Orumba North</option>
+            <option value="Orumba South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Orumba South') ? 'selected' : ''; ?>>Orumba South</option>
+            <option value="Oyi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oyi') ? 'selected' : ''; ?>>Oyi</option>
+        </optgroup>
+        <!-- Akwa Ibom LGAs -->
+        <optgroup label="Akwa Ibom State">
+            <option value="Abak" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abak') ? 'selected' : ''; ?>>Abak</option>
+            <option value="Eastern Obolo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Eastern Obolo') ? 'selected' : ''; ?>>Eastern Obolo</option>
+            <option value="Eket" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Eket') ? 'selected' : ''; ?>>Eket</option>
+            <option value="Esit Eket" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Esit Eket') ? 'selected' : ''; ?>>Esit Eket</option>
+            <option value="Essien Udim" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Essien Udim') ? 'selected' : ''; ?>>Essien Udim</option>
+            <option value="Etim Ekpo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Etim Ekpo') ? 'selected' : ''; ?>>Etim Ekpo</option>
+            <option value="Etinan" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Etinan') ? 'selected' : ''; ?>>Etinan</option>
+            <option value="Ibeno" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibeno') ? 'selected' : ''; ?>>Ibeno</option>
+            <option value="Ibesikpo Asutan" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibesikpo Asutan') ? 'selected' : ''; ?>>Ibesikpo Asutan</option>
+            <option value="Ibiono Ibom" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibiono Ibom') ? 'selected' : ''; ?>>Ibiono Ibom</option>
+            <option value="Ika" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ika') ? 'selected' : ''; ?>>Ika</option>
+            <option value="Ikono" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikono') ? 'selected' : ''; ?>>Ikono</option>
+            <option value="Ikot Abasi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikot Abasi') ? 'selected' : ''; ?>>Ikot Abasi</option>
+            <option value="Ikot Ekpene" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikot Ekpene') ? 'selected' : ''; ?>>Ikot Ekpene</option>
+            <option value="Ini" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ini') ? 'selected' : ''; ?>>Ini</option>
+            <option value="Itu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Itu') ? 'selected' : ''; ?>>Itu</option>
+            <option value="Mbo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mbo') ? 'selected' : ''; ?>>Mbo</option>
+            <option value="Mkpat Enin" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mkpat Enin') ? 'selected' : ''; ?>>Mkpat Enin</option>
+            <option value="Nsit Atai" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nsit Atai') ? 'selected' : ''; ?>>Nsit Atai</option>
+            <option value="Nsit Ibom" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nsit Ibom') ? 'selected' : ''; ?>>Nsit Ibom</option>
+            <option value="Nsit Ubium" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nsit Ubium') ? 'selected' : ''; ?>>Nsit Ubium</option>
+            <option value="Obot Akara" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obot Akara') ? 'selected' : ''; ?>>Obot Akara</option>
+            <option value="Okobo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Okobo') ? 'selected' : ''; ?>>Okobo</option>
+            <option value="Onna" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Onna') ? 'selected' : ''; ?>>Onna</option>
+            <option value="Oron" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oron') ? 'selected' : ''; ?>>Oron</option>
+            <option value="Oruk Anam" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oruk Anam') ? 'selected' : ''; ?>>Oruk Anam</option>
+            <option value="Udung Uko" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Udung Uko') ? 'selected' : ''; ?>>Udung Uko</option>
+            <option value="Ukanafun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ukanafun') ? 'selected' : ''; ?>>Ukanafun</option>
+            <option value="Uruan" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Uruan') ? 'selected' : ''; ?>>Uruan</option>
+            <option value="Urue-Offong/Oruko" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Urue-Offong/Oruko') ? 'selected' : ''; ?>>Urue-Offong/Oruko</option>
+            <option value="Uyo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Uyo') ? 'selected' : ''; ?>>Uyo</option>
+        </optgroup>
+        <!-- Bauchi LGAs -->
+        <optgroup label="Bauchi State">
+            <option value="Alkaleri" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Alkaleri') ? 'selected' : ''; ?>>Alkaleri</option>
+            <option value="Bauchi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bauchi') ? 'selected' : ''; ?>>Bauchi</option>
+            <option value="Bogoro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bogoro') ? 'selected' : ''; ?>>Bogoro</option>
+            <option value="Damban" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Damban') ? 'selected' : ''; ?>>Damban</option>
+            <option value="Darazo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Darazo') ? 'selected' : ''; ?>>Darazo</option>
+            <option value="Dass" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dass') ? 'selected' : ''; ?>>Dass</option>
+            <option value="Ganjuwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ganjuwa') ? 'selected' : ''; ?>>Ganjuwa</option>
+            <option value="Giade" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Giade') ? 'selected' : ''; ?>>Giade</option>
+            <option value="Itas/Gadau" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Itas/Gadau') ? 'selected' : ''; ?>>Itas/Gadau</option>
+            <option value="Jama'are" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jama\'are') ? 'selected' : ''; ?>>Jama'are</option>
+            <option value="Katagum" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Katagum') ? 'selected' : ''; ?>>Katagum</option>
+            <option value="Kirfi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kirfi') ? 'selected' : ''; ?>>Kirfi</option>
+            <option value="Misau" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Misau') ? 'selected' : ''; ?>>Misau</option>
+            <option value="Ningi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ningi') ? 'selected' : ''; ?>>Ningi</option>
+            <option value="Shira" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shira') ? 'selected' : ''; ?>>Shira</option>
+            <option value="Tafawa-Balewa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Tafawa-Balewa') ? 'selected' : ''; ?>>Tafawa-Balewa</option>
+            <option value="Toro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Toro') ? 'selected' : ''; ?>>Toro</option>
+            <option value="Warji" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Warji') ? 'selected' : ''; ?>>Warji</option>
+            <option value="Zaki" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Zaki') ? 'selected' : ''; ?>>Zaki</option>
+        </optgroup>
+         <!-- Bayelsa LGAs -->
+        <optgroup label="Bayelsa State">
+            <option value="Brass" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Brass') ? 'selected' : ''; ?>>Brass</option>
+            <option value="Ekeremor" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ekeremor') ? 'selected' : ''; ?>>Ekeremor</option>
+            <option value="Kolokuma/Opokuma" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kolokuma/Opokuma') ? 'selected' : ''; ?>>Kolokuma/Opokuma</option>
+            <option value="Nembe" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nembe') ? 'selected' : ''; ?>>Nembe</option>
+            <option value="Ogbia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogbia') ? 'selected' : ''; ?>>Ogbia</option>
+            <option value="Sagbama" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sagbama') ? 'selected' : ''; ?>>Sagbama</option>
+            <option value="Southern Jaw" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Southern Jaw') ? 'selected' : ''; ?>>Southern Jaw</option>
+            <option value="Yenegoa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yenegoa') ? 'selected' : ''; ?>>Yenegoa</option>
+        </optgroup>
+         <!-- Benue LGAs -->
+        <optgroup label="Benue State">
+            <option value="Ado" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ado') ? 'selected' : ''; ?>>Ado</option>
+            <option value="Agatu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Agatu') ? 'selected' : ''; ?>>Agatu</option>
+            <option value="Apa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Apa') ? 'selected' : ''; ?>>Apa</option>
+            <option value="Buruku" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Buruku') ? 'selected' : ''; ?>>Buruku</option>
+            <option value="Gboko" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gboko') ? 'selected' : ''; ?>>Gboko</option>
+            <option value="Guma" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Guma') ? 'selected' : ''; ?>>Guma</option>
+            <option value="Gwer East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwer East') ? 'selected' : ''; ?>>Gwer East</option>
+            <option value="Gwer West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwer West') ? 'selected' : ''; ?>>Gwer West</option>
+            <option value="Katsina-Ala" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Katsina-Ala') ? 'selected' : ''; ?>>Katsina-Ala</option>
+            <option value="Konshisha" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Konshisha') ? 'selected' : ''; ?>>Konshisha</option>
+            <option value="Kwande" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kwande') ? 'selected' : ''; ?>>Kwande</option>
+            <option value="Logo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Logo') ? 'selected' : ''; ?>>Logo</option>
+            <option value="Makurdi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Makurdi') ? 'selected' : ''; ?>>Makurdi</option>
+            <option value="Obi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obi') ? 'selected' : ''; ?>>Obi</option>
+            <option value="Ogbadibo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogbadibo') ? 'selected' : ''; ?>>Ogbadibo</option>
+            <option value="Oju" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oju') ? 'selected' : ''; ?>>Oju</option>
+            <option value="Okpokwu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Okpokwu') ? 'selected' : ''; ?>>Okpokwu</option>
+            <option value="Ohimini" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ohimini') ? 'selected' : ''; ?>>Ohimini</option>
+            <option value="Oturkpo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oturkpo') ? 'selected' : ''; ?>>Oturkpo</option>
+            <option value="Tarka" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Tarka') ? 'selected' : ''; ?>>Tarka</option>
+            <option value="Ukum" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ukum') ? 'selected' : ''; ?>>Ukum</option>
+            <option value="Ushongo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ushongo') ? 'selected' : ''; ?>>Ushongo</option>
+            <option value="Vandeikya" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Vandeikya') ? 'selected' : ''; ?>>Vandeikya</option>
+        </optgroup>
+        <!-- Borno LGAs -->
+        <optgroup label="Borno State">
+            <option value="Abadam" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abadam') ? 'selected' : ''; ?>>Abadam</option>
+            <option value="Askira/Uba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Askira/Uba') ? 'selected' : ''; ?>>Askira/Uba</option>
+            <option value="Bama" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bama') ? 'selected' : ''; ?>>Bama</option>
+            <option value="Bayo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bayo') ? 'selected' : ''; ?>>Bayo</option>
+            <option value="Biu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Biu') ? 'selected' : ''; ?>>Biu</option>
+            <option value="Chibok" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Chibok') ? 'selected' : ''; ?>>Chibok</option>
+            <option value="Damboa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Damboa') ? 'selected' : ''; ?>>Damboa</option>
+            <option value="Dikwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dikwa') ? 'selected' : ''; ?>>Dikwa</option>
+            <option value="Gubio" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gubio') ? 'selected' : ''; ?>>Gubio</option>
+            <option value="Guzamala" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Guzamala') ? 'selected' : ''; ?>>Guzamala</option>
+            <option value="Gwoza" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwoza') ? 'selected' : ''; ?>>Gwoza</option>
+            <option value="Hawul" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Hawul') ? 'selected' : ''; ?>>Hawul</option>
+            <option value="Jere" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jere') ? 'selected' : ''; ?>>Jere</option>
+            <option value="Kaga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kaga') ? 'selected' : ''; ?>>Kaga</option>
+            <option value="Kala/Balge" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kala/Balge') ? 'selected' : ''; ?>>Kala/Balge</option>
+            <option value="Konduga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Konduga') ? 'selected' : ''; ?>>Konduga</option>
+            <option value="Kukawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kukawa') ? 'selected' : ''; ?>>Kukawa</option>
+            <option value="Kwaya Kusar" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kwaya Kusar') ? 'selected' : ''; ?>>Kwaya Kusar</option>
+            <option value="Mafa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mafa') ? 'selected' : ''; ?>>Mafa</option>
+            <option value="Magumeri" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Magumeri') ? 'selected' : ''; ?>>Magumeri</option>
+            <option value="Maiduguri" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Maiduguri') ? 'selected' : ''; ?>>Maiduguri</option>
+            <option value="Marte" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Marte') ? 'selected' : ''; ?>>Marte</option>
+            <option value="Mobbar" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mobbar') ? 'selected' : ''; ?>>Mobbar</option>
+            <option value="Monguno" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Monguno') ? 'selected' : ''; ?>>Monguno</option>
+            <option value="Ngala" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ngala') ? 'selected' : ''; ?>>Ngala</option>
+            <option value="Nganzai" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nganzai') ? 'selected' : ''; ?>>Nganzai</option>
+            <option value="Shani" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shani') ? 'selected' : ''; ?>>Shani</option>
+        </optgroup>
+         <!-- Cross River LGAs -->
+        <optgroup label="Cross River State">
+            <option value="Akpabuyo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akpabuyo') ? 'selected' : ''; ?>>Akpabuyo</option>
+            <option value="Odukpani" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Odukpani') ? 'selected' : ''; ?>>Odukpani</option>
+            <option value="Akamkpa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akamkpa') ? 'selected' : ''; ?>>Akamkpa</option>
+            <option value="Biase" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Biase') ? 'selected' : ''; ?>>Biase</option>
+            <option value="Abi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abi') ? 'selected' : ''; ?>>Abi</option>
+            <option value="Ikom" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikom') ? 'selected' : ''; ?>>Ikom</option>
+            <option value="Yarkur" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yarkur') ? 'selected' : ''; ?>>Yarkur</option>
+            <option value="Odubra" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Odubra') ? 'selected' : ''; ?>>Odubra</option>
+            <option value="Boki" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Boki') ? 'selected' : ''; ?>>Boki</option>
+            <option value="Ogoja" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogoja') ? 'selected' : ''; ?>>Ogoja</option>
+            <option value="Yala" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yala') ? 'selected' : ''; ?>>Yala</option>
+            <option value="Obanliku" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obanliku') ? 'selected' : ''; ?>>Obanliku</option>
+            <option value="Obudu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obudu') ? 'selected' : ''; ?>>Obudu</option>
+            <option value="Calabar South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Calabar South') ? 'selected' : ''; ?>>Calabar South</option>
+            <option value="Etung" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Etung') ? 'selected' : ''; ?>>Etung</option>
+            <option value="Bekwara" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bekwara') ? 'selected' : ''; ?>>Bekwara</option>
+            <option value="Bakassi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bakassi') ? 'selected' : ''; ?>>Bakassi</option>
+            <option value="Calabar Municipality" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Calabar Municipality') ? 'selected' : ''; ?>>Calabar Municipality</option>
+        </optgroup>
+        <!-- Delta LGAs -->
+        <optgroup label="Delta State">
+            <option value="Oshimili" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oshimili') ? 'selected' : ''; ?>>Oshimili</option>
+            <option value="Aniocha" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aniocha') ? 'selected' : ''; ?>>Aniocha</option>
+            <option value="Aniocha South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aniocha South') ? 'selected' : ''; ?>>Aniocha South</option>
+            <option value="Ika South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ika South') ? 'selected' : ''; ?>>Ika South</option>
+            <option value="Ika North-East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ika North-East') ? 'selected' : ''; ?>>Ika North-East</option>
+            <option value="Ndokwa West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ndokwa West') ? 'selected' : ''; ?>>Ndokwa West</option>
+            <option value="Ndokwa East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ndokwa East') ? 'selected' : ''; ?>>Ndokwa East</option>
+            <option value="Isoko South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isoko South') ? 'selected' : ''; ?>>Isoko South</option>
+            <option value="Isoko North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isoko North') ? 'selected' : ''; ?>>Isoko North</option>
+            <option value="Bomadi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bomadi') ? 'selected' : ''; ?>>Bomadi</option>
+            <option value="Burutu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Burutu') ? 'selected' : ''; ?>>Burutu</option>
+            <option value="Ughelli South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ughelli South') ? 'selected' : ''; ?>>Ughelli South</option>
+            <option value="Ughelli North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ughelli North') ? 'selected' : ''; ?>>Ughelli North</option>
+            <option value="Ethiope West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ethiope West') ? 'selected' : ''; ?>>Ethiope West</option>
+            <option value="Ethiope East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ethiope East') ? 'selected' : ''; ?>>Ethiope East</option>
+            <option value="Sapele" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sapele') ? 'selected' : ''; ?>>Sapele</option>
+            <option value="Okpe" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Okpe') ? 'selected' : ''; ?>>Okpe</option>
+            <option value="Warri North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Warri North') ? 'selected' : ''; ?>>Warri North</option>
+            <option value="Warri South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Warri South') ? 'selected' : ''; ?>>Warri South</option>
+            <option value="Uvwie" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Uvwie') ? 'selected' : ''; ?>>Uvwie</option>
+            <option value="Udu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Udu') ? 'selected' : ''; ?>>Udu</option>
+            <option value="Warri Central" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Warri Central') ? 'selected' : ''; ?>>Warri Central</option>
+            <option value="Ukwani" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ukwani') ? 'selected' : ''; ?>>Ukwani</option>
+            <option value="Oshimili North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oshimili North') ? 'selected' : ''; ?>>Oshimili North</option>
+            <option value="Patani" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Patani') ? 'selected' : ''; ?>>Patani</option>
+        </optgroup>
+         <!-- Ebonyi LGAs -->
+        <optgroup label="Ebonyi State">
+            <option value="Edda" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Edda') ? 'selected' : ''; ?>>Edda</option>
+            <option value="Afikpo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Afikpo') ? 'selected' : ''; ?>>Afikpo</option>
+            <option value="Onicha" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Onicha') ? 'selected' : ''; ?>>Onicha</option>
+            <option value="Ohaozara" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ohaozara') ? 'selected' : ''; ?>>Ohaozara</option>
+            <option value="Abakaliki" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abakaliki') ? 'selected' : ''; ?>>Abakaliki</option>
+            <option value="Ishielu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ishielu') ? 'selected' : ''; ?>>Ishielu</option>
+            <option value="Ikwo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikwo') ? 'selected' : ''; ?>>Ikwo</option>
+            <option value="Ezza" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ezza') ? 'selected' : ''; ?>>Ezza</option>
+            <option value="Ezza South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ezza South') ? 'selected' : ''; ?>>Ezza South</option>
+            <option value="Ohaukwu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ohaukwu') ? 'selected' : ''; ?>>Ohaukwu</option>
+            <option value="Ebonyi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ebonyi') ? 'selected' : ''; ?>>Ebonyi</option>
+            <option value="Ivo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ivo') ? 'selected' : ''; ?>>Ivo</option>
+        </optgroup>
+        <!-- Enugu LGAs -->
+        <optgroup label="Enugu State">
+            <option value="Enugu South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Enugu South') ? 'selected' : ''; ?>>Enugu South</option>
+            <option value="Igbo-Eze South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Igbo-Eze South') ? 'selected' : ''; ?>>Igbo-Eze South</option>
+            <option value="Enugu North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Enugu North') ? 'selected' : ''; ?>>Enugu North</option>
+            <option value="Nkanu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nkanu') ? 'selected' : ''; ?>>Nkanu</option>
+            <option value="Udi Agwu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Udi Agwu') ? 'selected' : ''; ?>>Udi Agwu</option>
+            <option value="Oji-River" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oji-River') ? 'selected' : ''; ?>>Oji-River</option>
+            <option value="Ezeagu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ezeagu') ? 'selected' : ''; ?>>Ezeagu</option>
+            <option value="IgboEze North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'IgboEze North') ? 'selected' : ''; ?>>IgboEze North</option>
+            <option value="Isi-Uzo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isi-Uzo') ? 'selected' : ''; ?>>Isi-Uzo</option>
+            <option value="Nsukka" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nsukka') ? 'selected' : ''; ?>>Nsukka</option>
+            <option value="Igbo-Ekiti" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Igbo-Ekiti') ? 'selected' : ''; ?>>Igbo-Ekiti</option>
+            <option value="Uzo-Uwani" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Uzo-Uwani') ? 'selected' : ''; ?>>Uzo-Uwani</option>
+            <option value="Enugu East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Enugu East') ? 'selected' : ''; ?>>Enugu East</option>
+            <option value="Aninri" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aninri') ? 'selected' : ''; ?>>Aninri</option>
+            <option value="Nkanu East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nkanu East') ? 'selected' : ''; ?>>Nkanu East</option>
+            <option value="Udenu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Udenu') ? 'selected' : ''; ?>>Udenu</option>
+        </optgroup>
+         <!-- Edo LGAs -->
+        <optgroup label="Edo State">
+            <option value="Esan North-East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Esan North-East') ? 'selected' : ''; ?>>Esan North-East</option>
+            <option value="Esan Central" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Esan Central') ? 'selected' : ''; ?>>Esan Central</option>
+            <option value="Esan West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Esan West') ? 'selected' : ''; ?>>Esan West</option>
+            <option value="Egor" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Egor') ? 'selected' : ''; ?>>Egor</option>
+            <option value="Ukpoba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ukpoba') ? 'selected' : ''; ?>>Ukpoba</option>
+            <option value="Central" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Central') ? 'selected' : ''; ?>>Central</option>
+            <option value="Etsako Central" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Etsako Central') ? 'selected' : ''; ?>>Etsako Central</option>
+            <option value="Igueben" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Igueben') ? 'selected' : ''; ?>>Igueben</option>
+            <option value="Oredo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oredo') ? 'selected' : ''; ?>>Oredo</option>
+            <option value="Ovia SouthWest" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ovia SouthWest') ? 'selected' : ''; ?>>Ovia SouthWest</option>
+            <option value="Ovia South-East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ovia South-East') ? 'selected' : ''; ?>>Ovia South-East</option>
+            <option value="Orhionwon" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Orhionwon') ? 'selected' : ''; ?>>Orhionwon</option>
+            <option value="Uhunmwonde" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Uhunmwonde') ? 'selected' : ''; ?>>Uhunmwonde</option>
+            <option value="Etsako East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Etsako East') ? 'selected' : ''; ?>>Etsako East</option>
+            <option value="Esan South-East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Esan South-East') ? 'selected' : ''; ?>>Esan South-East</option>
+        </optgroup>
+         <!-- Ekiti LGAs -->
+        <optgroup label="Ekiti State">
+            <option value="Ado" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ado') ? 'selected' : ''; ?>>Ado</option>
+            <option value="Ekiti-East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ekiti-East') ? 'selected' : ''; ?>>Ekiti-East</option>
+            <option value="Ekiti-West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ekiti-West') ? 'selected' : ''; ?>>Ekiti-West</option>
+            <option value="Emure/Ise/Orun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Emure/Ise/Orun') ? 'selected' : ''; ?>>Emure/Ise/Orun</option>
+            <option value="Ekiti South-West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ekiti South-West') ? 'selected' : ''; ?>>Ekiti South-West</option>
+            <option value="Ikere" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikere') ? 'selected' : ''; ?>>Ikere</option>
+            <option value="Irepodun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Irepodun') ? 'selected' : ''; ?>>Irepodun</option>
+            <option value="Ijero" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ijero') ? 'selected' : ''; ?>>Ijero</option>
+            <option value="Ido/Osi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ido/Osi') ? 'selected' : ''; ?>>Ido/Osi</option>
+            <option value="Oye" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oye') ? 'selected' : ''; ?>>Oye</option>
+            <option value="Ikole" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikole') ? 'selected' : ''; ?>>Ikole</option>
+            <option value="Moba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Moba') ? 'selected' : ''; ?>>Moba</option>
+            <option value="Gbonyin" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gbonyin') ? 'selected' : ''; ?>>Gbonyin</option>
+            <option value="Efon" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Efon') ? 'selected' : ''; ?>>Efon</option>
+            <option value="Ise/Orun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ise/Orun') ? 'selected' : ''; ?>>Ise/Orun</option>
+            <option value="Ilejemeje" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ilejemeje') ? 'selected' : ''; ?>>Ilejemeje</option>
+        </optgroup>
+         <!-- FCT LGAs -->
+        <optgroup label="Federal Capital Territory (FCT)">
+            <option value="Abaji" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abaji') ? 'selected' : ''; ?>>Abaji</option>
+            <option value="Abuja Municipal" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abuja Municipal') ? 'selected' : ''; ?>>Abuja Municipal</option>
+            <option value="Bwari" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bwari') ? 'selected' : ''; ?>>Bwari</option>
+            <option value="Gwagwalada" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwagwalada') ? 'selected' : ''; ?>>Gwagwalada</option>
+            <option value="Kuje" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kuje') ? 'selected' : ''; ?>>Kuje</option>
+            <option value="Kwali" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kwali') ? 'selected' : ''; ?>>Kwali</option>
+        </optgroup>
+         <!-- Gombe LGAs -->
+        <optgroup label="Gombe">
+            <option value="Akko" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akko') ? 'selected' : ''; ?>>Akko</option>
+            <option value="Balanga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Balanga') ? 'selected' : ''; ?>>Balanga</option>
+            <option value="Billiri" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Billiri') ? 'selected' : ''; ?>>Billiri</option>
+            <option value="Dukku" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dukku') ? 'selected' : ''; ?>>Dukku</option>
+            <option value="Kaltungo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kaltungo') ? 'selected' : ''; ?>>Kaltungo</option>
+            <option value="Kwami" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kwami') ? 'selected' : ''; ?>>Kwami</option>
+            <option value="Shomgom" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shomgom') ? 'selected' : ''; ?>>Shomgom</option>
+            <option value="Funakaye" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Funakaye') ? 'selected' : ''; ?>>Funakaye</option>
+            <option value="Gombe" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gombe') ? 'selected' : ''; ?>>Gombe</option>
+            <option value="Nafada/Bajoga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nafada/Bajoga') ? 'selected' : ''; ?>>Nafada/Bajoga</option>
+            <option value="Yamaltu/Delta" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yamaltu/Delta') ? 'selected' : ''; ?>>Yamaltu/Delta</option>
+        </optgroup>
+        <!-- Imo LGAs -->
+        <optgroup label="Imo">
+            <option value="Aboh-Mbaise" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aboh-Mbaise') ? 'selected' : ''; ?>>Aboh-Mbaise</option>
+            <option value="Ahiazu-Mbaise" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ahiazu-Mbaise') ? 'selected' : ''; ?>>Ahiazu-Mbaise</option>
+            <option value="Ehime-Mbano" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ehime-Mbano') ? 'selected' : ''; ?>>Ehime-Mbano</option>
+            <option value="Ezinihitte" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ezinihitte') ? 'selected' : ''; ?>>Ezinihitte</option>
+            <option value="Ideato North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ideato North') ? 'selected' : ''; ?>>Ideato North</option>
+            <option value="Ideato South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ideato South') ? 'selected' : ''; ?>>Ideato South</option>
+            <option value="Ihitte/Uboma" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ihitte/Uboma') ? 'selected' : ''; ?>>Ihitte/Uboma</option>
+            <option value="Ikeduru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikeduru') ? 'selected' : ''; ?>>Ikeduru</option>
+            <option value="Isiala Mbano" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isiala Mbano') ? 'selected' : ''; ?>>Isiala Mbano</option>
+            <option value="Isu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isu') ? 'selected' : ''; ?>>Isu</option>
+            <option value="Mbaitoli" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mbaitoli') ? 'selected' : ''; ?>>Mbaitoli</option>
+            <option value="Ngor-Okpala" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ngor-Okpala') ? 'selected' : ''; ?>>Ngor-Okpala</option>
+            <option value="Njaba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Njaba') ? 'selected' : ''; ?>>Njaba</option>
+            <option value="Nwangele" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nwangele') ? 'selected' : ''; ?>>Nwangele</option>
+            <option value="Nkwerre" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nkwerre') ? 'selected' : ''; ?>>Nkwerre</option>
+            <option value="Obowo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obowo') ? 'selected' : ''; ?>>Obowo</option>
+            <option value="Oguta" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oguta') ? 'selected' : ''; ?>>Oguta</option>
+            <option value="Ohaji/Egbema" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ohaji/Egbema') ? 'selected' : ''; ?>>Ohaji/Egbema</option>
+            <option value="Okigwe" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Okigwe') ? 'selected' : ''; ?>>Okigwe</option>
+            <option value="Orlu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Orlu') ? 'selected' : ''; ?>>Orlu</option>
+            <option value="Orsu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Orsu') ? 'selected' : ''; ?>>Orsu</option>
+            <option value="Oru East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oru East') ? 'selected' : ''; ?>>Oru East</option>
+            <option value="Oru West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oru West') ? 'selected' : ''; ?>>Oru West</option>
+            <option value="Owerri-Municipal" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Owerri-Municipal') ? 'selected' : ''; ?>>Owerri-Municipal</option>
+            <option value="Owerri North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Owerri North') ? 'selected' : ''; ?>>Owerri North</option>
+            <option value="Owerri West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Owerri West') ? 'selected' : ''; ?>>Owerri West</option>
+        </optgroup>
+         <!-- Jigawa LGAs -->
+        <optgroup label="Jigawa">
+            <option value="Auyo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Auyo') ? 'selected' : ''; ?>>Auyo</option>
+            <option value="Babura" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Babura') ? 'selected' : ''; ?>>Babura</option>
+            <option value="Birni Kudu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Birni Kudu') ? 'selected' : ''; ?>>Birni Kudu</option>
+            <option value="Biriniwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Biriniwa') ? 'selected' : ''; ?>>Biriniwa</option>
+            <option value="Buji" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Buji') ? 'selected' : ''; ?>>Buji</option>
+            <option value="Dutse" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dutse') ? 'selected' : ''; ?>>Dutse</option>
+            <option value="Gagarawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gagarawa') ? 'selected' : ''; ?>>Gagarawa</option>
+            <option value="Garki" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Garki') ? 'selected' : ''; ?>>Garki</option>
+            <option value="Gumel" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gumel') ? 'selected' : ''; ?>>Gumel</option>
+            <option value="Guri" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Guri') ? 'selected' : ''; ?>>Guri</option>
+            <option value="Gwaram" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwaram') ? 'selected' : ''; ?>>Gwaram</option>
+            <option value="Gwiwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwiwa') ? 'selected' : ''; ?>>Gwiwa</option>
+            <option value="Hadejia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Hadejia') ? 'selected' : ''; ?>>Hadejia</option>
+            <option value="Jahun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jahun') ? 'selected' : ''; ?>>Jahun</option>
+            <option value="Kafin Hausa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kafin Hausa') ? 'selected' : ''; ?>>Kafin Hausa</option>
+            <option value="Kaugama Kazaure" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kaugama Kazaure') ? 'selected' : ''; ?>>Kaugama Kazaure</option>
+            <option value="Kiri Kasamma" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kiri Kasamma') ? 'selected' : ''; ?>>Kiri Kasamma</option>
+            <option value="Kiyawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kiyawa') ? 'selected' : ''; ?>>Kiyawa</option>
+            <option value="Maigatari" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Maigatari') ? 'selected' : ''; ?>>Maigatari</option>
+            <option value="Malam Madori" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Malam Madori') ? 'selected' : ''; ?>>Malam Madori</option>
+            <option value="Miga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Miga') ? 'selected' : ''; ?>>Miga</option>
+            <option value="Ringim" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ringim') ? 'selected' : ''; ?>>Ringim</option>
+            <option value="Roni" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Roni') ? 'selected' : ''; ?>>Roni</option>
+            <option value="Sule-Tankarkar" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sule-Tankarkar') ? 'selected' : ''; ?>>Sule-Tankarkar</option>
+            <option value="Taura" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Taura') ? 'selected' : ''; ?>>Taura</option>
+            <option value="Yankwashi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yankwashi') ? 'selected' : ''; ?>>Yankwashi</option>
+        </optgroup>
+         <!-- Kaduna LGAs -->
+        <optgroup label="Kaduna">
+            <option value="Birni-Gwari" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Birni-Gwari') ? 'selected' : ''; ?>>Birni-Gwari</option>
+            <option value="Chikun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Chikun') ? 'selected' : ''; ?>>Chikun</option>
+            <option value="Giwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Giwa') ? 'selected' : ''; ?>>Giwa</option>
+            <option value="Igabi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Igabi') ? 'selected' : ''; ?>>Igabi</option>
+            <option value="Ikara" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikara') ? 'selected' : ''; ?>>Ikara</option>
+            <option value="Jaba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jaba') ? 'selected' : ''; ?>>Jaba</option>
+            <option value="Jema'a" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jema\'a') ? 'selected' : ''; ?>>Jema'a</option>
+            <option value="Kachia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kachia') ? 'selected' : ''; ?>>Kachia</option>
+            <option value="Kaduna North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kaduna North') ? 'selected' : ''; ?>>Kaduna North</option>
+            <option value="Kaduna South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kaduna South') ? 'selected' : ''; ?>>Kaduna South</option>
+            <option value="Kagarko" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kagarko') ? 'selected' : ''; ?>>Kagarko</option>
+            <option value="Kajuru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kajuru') ? 'selected' : ''; ?>>Kajuru</option>
+            <option value="Kaura" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kaura') ? 'selected' : ''; ?>>Kaura</option>
+            <option value="Kauru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kauru') ? 'selected' : ''; ?>>Kauru</option>
+            <option value="Kubau" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kubau') ? 'selected' : ''; ?>>Kubau</option>
+            <option value="Kudan" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kudan') ? 'selected' : ''; ?>>Kudan</option>
+            <option value="Lere" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Lere') ? 'selected' : ''; ?>>Lere</option>
+            <option value="Makarfi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Makarfi') ? 'selected' : ''; ?>>Makarfi</option>
+            <option value="Sabon-Gari" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sabon-Gari') ? 'selected' : ''; ?>>Sabon-Gari</option>
+            <option value="Sanga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sanga') ? 'selected' : ''; ?>>Sanga</option>
+            <option value="Soba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Soba') ? 'selected' : ''; ?>>Soba</option>
+            <option value="Zango-Kataf" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Zango-Kataf') ? 'selected' : ''; ?>>Zango-Kataf</option>
+            <option value="Zaria" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Zaria') ? 'selected' : ''; ?>>Zaria</option>
+        </optgroup>
+         <!-- Kano LGAs -->
+        <optgroup label="Kano">
+            <option value="Ajingi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ajingi') ? 'selected' : ''; ?>>Ajingi</option>
+            <option value="Albasu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Albasu') ? 'selected' : ''; ?>>Albasu</option>
+            <option value="Bagwai" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bagwai') ? 'selected' : ''; ?>>Bagwai</option>
+            <option value="Bebeji" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bebeji') ? 'selected' : ''; ?>>Bebeji</option>
+            <option value="Bichi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bichi') ? 'selected' : ''; ?>>Bichi</option>
+            <option value="Bunkure" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bunkure') ? 'selected' : ''; ?>>Bunkure</option>
+            <option value="Dala" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dala') ? 'selected' : ''; ?>>Dala</option>
+            <option value="Dambatta" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dambatta') ? 'selected' : ''; ?>>Dambatta</option>
+            <option value="Dawakin Kudu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dawakin Kudu') ? 'selected' : ''; ?>>Dawakin Kudu</option>
+            <option value="Dawakin Tofa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dawakin Tofa') ? 'selected' : ''; ?>>Dawakin Tofa</option>
+            <option value="Doguwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Doguwa') ? 'selected' : ''; ?>>Doguwa</option>
+            <option value="Fagge" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Fagge') ? 'selected' : ''; ?>>Fagge</option>
+            <option value="Gabasawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gabasawa') ? 'selected' : ''; ?>>Gabasawa</option>
+            <option value="Garko" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Garko') ? 'selected' : ''; ?>>Garko</option>
+            <option value="Garum" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Garum') ? 'selected' : ''; ?>>Garum</option>
+            <option value="Mallam" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mallam') ? 'selected' : ''; ?>>Mallam</option>
+            <option value="Gaya" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gaya') ? 'selected' : ''; ?>>Gaya</option>
+            <option value="Gezawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gezawa') ? 'selected' : ''; ?>>Gezawa</option>
+            <option value="Gwale" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwale') ? 'selected' : ''; ?>>Gwale</option>
+            <option value="Gwarzo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwarzo') ? 'selected' : ''; ?>>Gwarzo</option>
+            <option value="Kabo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kabo') ? 'selected' : ''; ?>>Kabo</option>
+            <option value="Kano Municipal" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kano Municipal') ? 'selected' : ''; ?>>Kano Municipal</option>
+            <option value="Karaye" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Karaye') ? 'selected' : ''; ?>>Karaye</option>
+            <option value="Kibiya" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kibiya') ? 'selected' : ''; ?>>Kibiya</option>
+            <option value="Kiru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kiru') ? 'selected' : ''; ?>>Kiru</option>
+            <option value="Kumbotso" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kumbotso') ? 'selected' : ''; ?>>Kumbotso</option>
+            <option value="Ghari" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ghari') ? 'selected' : ''; ?>>Ghari</option>
+            <option value="Kura" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kura') ? 'selected' : ''; ?>>Kura</option>
+            <option value="Madobi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Madobi') ? 'selected' : ''; ?>>Madobi</option>
+            <option value="Makoda" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Makoda') ? 'selected' : ''; ?>>Makoda</option>
+            <option value="Minjibir" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Minjibir') ? 'selected' : ''; ?>>Minjibir</option>
+            <option value="Nasarawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nasarawa') ? 'selected' : ''; ?>>Nasarawa</option>
+            <option value="Rano" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Rano') ? 'selected' : ''; ?>>Rano</option>
+            <option value="Rimin Gado" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Rimin Gado') ? 'selected' : ''; ?>>Rimin Gado</option>
+            <option value="Rogo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Rogo') ? 'selected' : ''; ?>>Rogo</option>
+            <option value="Shanono" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shanono') ? 'selected' : ''; ?>>Shanono</option>
+            <option value="Sumaila" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sumaila') ? 'selected' : ''; ?>>Sumaila</option>
+            <option value="Takali" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Takali') ? 'selected' : ''; ?>>Takali</option>
+            <option value="Tarauni" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Tarauni') ? 'selected' : ''; ?>>Tarauni</option>
+            <option value="Tofa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Tofa') ? 'selected' : ''; ?>>Tofa</option>
+            <option value="Tsanyawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Tsanyawa') ? 'selected' : ''; ?>>Tsanyawa</option>
+            <option value="Tudun Wada" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Tudun Wada') ? 'selected' : ''; ?>>Tudun Wada</option>
+            <option value="Ungogo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ungogo') ? 'selected' : ''; ?>>Ungogo</option>
+            <option value="Warawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Warawa') ? 'selected' : ''; ?>>Warawa</option>
+            <option value="Wudil" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Wudil') ? 'selected' : ''; ?>>Wudil</option>
+        </optgroup>
+        <!-- Katsina LGAs -->
+        <optgroup label="Katsina">
+            <option value="Bakori" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bakori') ? 'selected' : ''; ?>>Bakori</option>
+            <option value="Batagarawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Batagarawa') ? 'selected' : ''; ?>>Batagarawa</option>
+            <option value="Batsari" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Batsari') ? 'selected' : ''; ?>>Batsari</option>
+            <option value="Baure" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Baure') ? 'selected' : ''; ?>>Baure</option>
+            <option value="Bindawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bindawa') ? 'selected' : ''; ?>>Bindawa</option>
+            <option value="Charanchi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Charanchi') ? 'selected' : ''; ?>>Charanchi</option>
+            <option value="Dandume" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dandume') ? 'selected' : ''; ?>>Dandume</option>
+            <option value="Danja" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Danja') ? 'selected' : ''; ?>>Danja</option>
+            <option value="Dan Musa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dan Musa') ? 'selected' : ''; ?>>Dan Musa</option>
+            <option value="Daura" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Daura') ? 'selected' : ''; ?>>Daura</option>
+            <option value="Dutsi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dutsi') ? 'selected' : ''; ?>>Dutsi</option>
+            <option value="Dutsin-Ma" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dutsin-Ma') ? 'selected' : ''; ?>>Dutsin-Ma</option>
+            <option value="Faskari" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Faskari') ? 'selected' : ''; ?>>Faskari</option>
+            <option value="Funtua" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Funtua') ? 'selected' : ''; ?>>Funtua</option>
+            <option value="Ingawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ingawa') ? 'selected' : ''; ?>>Ingawa</option>
+            <option value="Jibia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jibia') ? 'selected' : ''; ?>>Jibia</option>
+            <option value="Kafur" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kafur') ? 'selected' : ''; ?>>Kafur</option>
+            <option value="Kaita" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kaita') ? 'selected' : ''; ?>>Kaita</option>
+            <option value="Kankara" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kankara') ? 'selected' : ''; ?>>Kankara</option>
+            <option value="Kankia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kankia') ? 'selected' : ''; ?>>Kankia</option>
+            <option value="Katsina" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Katsina') ? 'selected' : ''; ?>>Katsina</option>
+            <option value="Kurfi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kurfi') ? 'selected' : ''; ?>>Kurfi</option>
+            <option value="Kusada" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kusada') ? 'selected' : ''; ?>>Kusada</option>
+            <option value="Mai'Adua" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mai\'Adua') ? 'selected' : ''; ?>>Mai'Adua</option>
+            <option value="Malumfashi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Malumfashi') ? 'selected' : ''; ?>>Malumfashi</option>
+            <option value="Mani" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mani') ? 'selected' : ''; ?>>Mani</option>
+            <option value="Mashi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mashi') ? 'selected' : ''; ?>>Mashi</option>
+            <option value="Matazuu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Matazuu') ? 'selected' : ''; ?>>Matazuu</option>
+            <option value="Musawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Musawa') ? 'selected' : ''; ?>>Musawa</option>
+            <option value="Rimi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Rimi') ? 'selected' : ''; ?>>Rimi</option>
+            <option value="Sabuwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sabuwa') ? 'selected' : ''; ?>>Sabuwa</option>
+            <option value="Safana" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Safana') ? 'selected' : ''; ?>>Safana</option>
+            <option value="Sandamu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sandamu') ? 'selected' : ''; ?>>Sandamu</option>
+            <option value="Zango" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Zango') ? 'selected' : ''; ?>>Zango</option>
+        </optgroup>
+        <!-- Kebbi LGAs -->
+        <optgroup label="Kebbi">
+            <option value="Aleiro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aleiro') ? 'selected' : ''; ?>>Aleiro</option>
+            <option value="Arewa-Dandi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Arewa-Dandi') ? 'selected' : ''; ?>>Arewa-Dandi</option>
+            <option value="Argungu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Argungu') ? 'selected' : ''; ?>>Argungu</option>
+            <option value="Augie" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Augie') ? 'selected' : ''; ?>>Augie</option>
+            <option value="Bagudo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bagudo') ? 'selected' : ''; ?>>Bagudo</option>
+            <option value="Birnin Kebbi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Birnin Kebbi') ? 'selected' : ''; ?>>Birnin Kebbi</option>
+            <option value="Bunza" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bunza') ? 'selected' : ''; ?>>Bunza</option>
+            <option value="Dandi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Dandi') ? 'selected' : ''; ?>>Dandi</option>
+            <option value="Fakai" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Fakai') ? 'selected' : ''; ?>>Fakai</option>
+            <option value="Gwandu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gwandu') ? 'selected' : ''; ?>>Gwandu</option>
+            <option value="Jega" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jega') ? 'selected' : ''; ?>>Jega</option>
+            <option value="Kalgo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kalgo') ? 'selected' : ''; ?>>Kalgo</option>
+            <option value="Koko/Besse" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Koko/Besse') ? 'selected' : ''; ?>>Koko/Besse</option>
+            <option value="Maiyama" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Maiyama') ? 'selected' : ''; ?>>Maiyama</option>
+            <option value="Ngaski" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ngaski') ? 'selected' : ''; ?>>Ngaski</option>
+            <option value="Sakaba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Sakaba') ? 'selected' : ''; ?>>Sakaba</option>
+            <option value="Shanga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shanga') ? 'selected' : ''; ?>>Shanga</option>
+            <option value="Suru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Suru') ? 'selected' : ''; ?>>Suru</option>
+            <option value="Wasagu/Danko" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Wasagu/Danko') ? 'selected' : ''; ?>>Wasagu/Danko</option>
+            <option value="Yauri" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yauri') ? 'selected' : ''; ?>>Yauri</option>
+            <option value="Zuru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Zuru') ? 'selected' : ''; ?>>Zuru</option>
+        </optgroup>
+         <!-- Kwara LGAs -->
+        <optgroup label="Kwara">
+            <option value="Asa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Asa') ? 'selected' : ''; ?>>Asa</option>
+            <option value="Baruten" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Baruten') ? 'selected' : ''; ?>>Baruten</option>
+            <option value="Edu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Edu') ? 'selected' : ''; ?>>Edu</option>
+            <option value="Ekiti" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ekiti') ? 'selected' : ''; ?>>Ekiti</option>
+            <option value="Ifelodun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ifelodun') ? 'selected' : ''; ?>>Ifelodun</option>
+            <option value="Ilorin East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ilorin East') ? 'selected' : ''; ?>>Ilorin East</option>
+            <option value="Ilorin West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ilorin West') ? 'selected' : ''; ?>>Ilorin West</option>
+            <option value="Irepodun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Irepodun') ? 'selected' : ''; ?>>Irepodun</option>
+            <option value="Isin" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isin') ? 'selected' : ''; ?>>Isin</option>
+            <option value="Kaiama" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kaiama') ? 'selected' : ''; ?>>Kaiama</option>
+            <option value="Moro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Moro') ? 'selected' : ''; ?>>Moro</option>
+            <option value="Offa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Offa') ? 'selected' : ''; ?>>Offa</option>
+            <option value="Oke-Ero" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oke-Ero') ? 'selected' : ''; ?>>Oke-Ero</option>
+            <option value="Oyun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oyun') ? 'selected' : ''; ?>>Oyun</option>
+            <option value="Pategi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Pategi') ? 'selected' : ''; ?>>Pategi</option>
+        </optgroup>
+        <!-- Lagos LGAs -->
+        <optgroup label="Lagos">
+            <option value="Agege" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Agege') ? 'selected' : ''; ?>>Agege</option>
+            <option value="Ajeromi-Ifelodun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ajeromi-Ifelodun') ? 'selected' : ''; ?>>Ajeromi-Ifelodun</option>
+            <option value="Alimosho" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Alimosho') ? 'selected' : ''; ?>>Alimosho</option>
+            <option value="Amuwo-Odofin" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Amuwo-Odofin') ? 'selected' : ''; ?>>Amuwo-Odofin</option>
+            <option value="Apapa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Apapa') ? 'selected' : ''; ?>>Apapa</option>
+            <option value="Badagry" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Badagry') ? 'selected' : ''; ?>>Badagry</option>
+            <option value="Epe" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Epe') ? 'selected' : ''; ?>>Epe</option>
+            <option value="Eti-Osa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Eti-Osa') ? 'selected' : ''; ?>>Eti-Osa</option>
+            <option value="Ibeju/Lekki" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibeju/Lekki') ? 'selected' : ''; ?>>Ibeju/Lekki</option>
+            <option value="Ifako-Ijaye" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ifako-Ijaye') ? 'selected' : ''; ?>>Ifako-Ijaye</option>
+            <option value="Ikeja" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikeja') ? 'selected' : ''; ?>>Ikeja</option>
+            <option value="Ikorodu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikorodu') ? 'selected' : ''; ?>>Ikorodu</option>
+            <option value="Kosofe" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kosofe') ? 'selected' : ''; ?>>Kosofe</option>
+            <option value="Lagos Island" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Lagos Island') ? 'selected' : ''; ?>>Lagos Island</option>
+            <option value="Lagos Mainland" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Lagos Mainland') ? 'selected' : ''; ?>>Lagos Mainland</option>
+            <option value="Mushin" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mushin') ? 'selected' : ''; ?>>Mushin</option>
+            <option value="Ojo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ojo') ? 'selected' : ''; ?>>Ojo</option>
+            <option value="Oshodi-Isolo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oshodi-Isolo') ? 'selected' : ''; ?>>Oshodi-Isolo</option>
+            <option value="Shomolu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shomolu') ? 'selected' : ''; ?>>Shomolu</option>
+            <option value="Surulere" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Surulere') ? 'selected' : ''; ?>>Surulere</option>
+        </optgroup>
+         <!-- Nasarawa LGAs -->
+        <optgroup label="Nasarawa">
+            <option value="Akwanga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akwanga') ? 'selected' : ''; ?>>Akwanga</option>
+            <option value="Awe" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Awe') ? 'selected' : ''; ?>>Awe</option>
+            <option value="Doma" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Doma') ? 'selected' : ''; ?>>Doma</option>
+            <option value="Karu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Karu') ? 'selected' : ''; ?>>Karu</option>
+            <option value="Keana" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Keana') ? 'selected' : ''; ?>>Keana</option>
+            <option value="Keffi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Keffi') ? 'selected' : ''; ?>>Keffi</option>
+            <option value="Kokona" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kokona') ? 'selected' : ''; ?>>Kokona</option>
+            <option value="Lafia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Lafia') ? 'selected' : ''; ?>>Lafia</option>
+            <option value="Nasarawa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nasarawa') ? 'selected' : ''; ?>>Nasarawa</option>
+            <option value="Nasarawa-Eggon" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Nasarawa-Eggon') ? 'selected' : ''; ?>>Nasarawa-Eggon</option>
+            <option value="Obi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obi') ? 'selected' : ''; ?>>Obi</option>
+            <option value="Toto" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Toto') ? 'selected' : ''; ?>>Toto</option>
+            <option value="Wamba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Wamba') ? 'selected' : ''; ?>>Wamba</option>
+        </optgroup>
+        <!-- Niger LGAs -->
+        <optgroup label="Niger">
+            <option value="Agaie" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Agaie') ? 'selected' : ''; ?>>Agaie</option>
+            <option value="Agwara" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Agwara') ? 'selected' : ''; ?>>Agwara</option>
+            <option value="Bida" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bida') ? 'selected' : ''; ?>>Bida</option>
+            <option value="Borgu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Borgu') ? 'selected' : ''; ?>>Borgu</option>
+            <option value="Bosso" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bosso') ? 'selected' : ''; ?>>Bosso</option>
+            <option value="Chanchaga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Chanchaga') ? 'selected' : ''; ?>>Chanchaga</option>
+            <option value="Edati" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Edati') ? 'selected' : ''; ?>>Edati</option>
+            <option value="Gbako" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gbako') ? 'selected' : ''; ?>>Gbako</option>
+            <option value="Gurara" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gurara') ? 'selected' : ''; ?>>Gurara</option>
+            <option value="Katcha" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Katcha') ? 'selected' : ''; ?>>Katcha</option>
+            <option value="Kontagora" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kontagora') ? 'selected' : ''; ?>>Kontagora</option>
+            <option value="Lapai" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Lapai') ? 'selected' : ''; ?>>Lapai</option>
+            <option value="Lavun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Lavun') ? 'selected' : ''; ?>>Lavun</option>
+            <option value="Magama" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Magama') ? 'selected' : ''; ?>>Magama</option>
+            <option value="Mariga" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mariga') ? 'selected' : ''; ?>>Mariga</option>
+            <option value="Mashegu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mashegu') ? 'selected' : ''; ?>>Mashegu</option>
+            <option value="Mokwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mokwa') ? 'selected' : ''; ?>>Mokwa</option>
+            <option value="Muya" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Muya') ? 'selected' : ''; ?>>Muya</option>
+            <option value="Pailoro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Pailoro') ? 'selected' : ''; ?>>Pailoro</option>
+            <option value="Rafi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Rafi') ? 'selected' : ''; ?>>Rafi</option>
+            <option value="Rijau" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Rijau') ? 'selected' : ''; ?>>Rijau</option>
+            <option value="Shiroro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shiroro') ? 'selected' : ''; ?>>Shiroro</option>
+            <option value="Suleja" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Suleja') ? 'selected' : ''; ?>>Suleja</option>
+            <option value="Tafa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Tafa') ? 'selected' : ''; ?>>Tafa</option>
+            <option value="Wushishi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Wushishi') ? 'selected' : ''; ?>>Wushishi</option>
+        </optgroup>
+        <!-- Ogun LGAs -->
+        <optgroup label="Ogun">
+            <option value="Abeokuta North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abeokuta North') ? 'selected' : ''; ?>>Abeokuta North</option>
+            <option value="Abeokuta South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abeokuta South') ? 'selected' : ''; ?>>Abeokuta South</option>
+            <option value="Ado-Odo/Ota" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ado-Odo/Ota') ? 'selected' : ''; ?>>Ado-Odo/Ota</option>
+            <option value="Yewa North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yewa North') ? 'selected' : ''; ?>>Yewa North</option>
+            <option value="Yewa South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Yewa South') ? 'selected' : ''; ?>>Yewa South</option>
+            <option value="Ewekoro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ewekoro') ? 'selected' : ''; ?>>Ewekoro</option>
+            <option value="Ifo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ifo') ? 'selected' : ''; ?>>Ifo</option>
+            <option value="Ijebu East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ijebu East') ? 'selected' : ''; ?>>Ijebu East</option>
+            <option value="Ijebu North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ijebu North') ? 'selected' : ''; ?>>Ijebu North</option>
+            <option value="Ijebu North East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ijebu North East') ? 'selected' : ''; ?>>Ijebu North East</option>
+            <option value="Ijebu Ode" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ijebu Ode') ? 'selected' : ''; ?>>Ijebu Ode</option>
+            <option value="Ikenne" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikenne') ? 'selected' : ''; ?>>Ikenne</option>
+            <option value="Imeko-Afon" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Imeko-Afon') ? 'selected' : ''; ?>>Imeko-Afon</option>
+            <option value="Ipokia" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ipokia') ? 'selected' : ''; ?>>Ipokia</option>
+            <option value="Obafemi-Owode" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obafemi-Owode') ? 'selected' : ''; ?>>Obafemi-Owode</option>
+            <option value="Ogun Waterside" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogun Waterside') ? 'selected' : ''; ?>>Ogun Waterside</option>
+            <option value="Odeda" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Odeda') ? 'selected' : ''; ?>>Odeda</option>
+            <option value="Odogbolu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Odogbolu') ? 'selected' : ''; ?>>Odogbolu</option>
+            <option value="Remo North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Remo North') ? 'selected' : ''; ?>>Remo North</option>
+            <option value="Shagamu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shagamu') ? 'selected' : ''; ?>>Shagamu</option>
+        </optgroup>
+        <!-- Ondo LGAs -->
+        <optgroup label="Ondo">
+            <option value="Akoko North East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akoko North East') ? 'selected' : ''; ?>>Akoko North East</option>
+            <option value="Akoko North West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akoko North West') ? 'selected' : ''; ?>>Akoko North West</option>
+            <option value="Akoko South Akure East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akoko South Akure East') ? 'selected' : ''; ?>>Akoko South Akure East</option>
+            <option value="Akoko South West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akoko South West') ? 'selected' : ''; ?>>Akoko South West</option>
+            <option value="Akure North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akure North') ? 'selected' : ''; ?>>Akure North</option>
+            <option value="Akure South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akure South') ? 'selected' : ''; ?>>Akure South</option>
+            <option value="Ese-Odo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ese-Odo') ? 'selected' : ''; ?>>Ese-Odo</option>
+            <option value="Idanre" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Idanre') ? 'selected' : ''; ?>>Idanre</option>
+            <option value="Ifedore" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ifedore') ? 'selected' : ''; ?>>Ifedore</option>
+            <option value="Ilaje" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ilaje') ? 'selected' : ''; ?>>Ilaje</option>
+            <option value="Ile-Oluji" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ile-Oluji') ? 'selected' : ''; ?>>Ile-Oluji</option>
+            <option value="Okeigbo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Okeigbo') ? 'selected' : ''; ?>>Okeigbo</option>
+            <option value="Irele" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Irele') ? 'selected' : ''; ?>>Irele</option>
+            <option value="Odigbo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Odigbo') ? 'selected' : ''; ?>>Odigbo</option>
+            <option value="Okitipupa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Okitipupa') ? 'selected' : ''; ?>>Okitipupa</option>
+            <option value="Ondo East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ondo East') ? 'selected' : ''; ?>>Ondo East</option>
+            <option value="Ondo West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ondo West') ? 'selected' : ''; ?>>Ondo West</option>
+            <option value="Ose" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ose') ? 'selected' : ''; ?>>Ose</option>
+            <option value="Owo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Owo') ? 'selected' : ''; ?>>Owo</option>
+        </optgroup>
+        <!-- Osun LGAs -->
+        <optgroup label="Osun">
+            <option value="Aiyedade" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aiyedade') ? 'selected' : ''; ?>>Aiyedade</option>
+            <option value="Aiyedire" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Aiyedire') ? 'selected' : ''; ?>>Aiyedire</option>
+            <option value="Atakumosa East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Atakumosa East') ? 'selected' : ''; ?>>Atakumosa East</option>
+            <option value="Atakumosa West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Atakumosa West') ? 'selected' : ''; ?>>Atakumosa West</option>
+            <option value="Boluwaduro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Boluwaduro') ? 'selected' : ''; ?>>Boluwaduro</option>
+            <option value="Boripe" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Boripe') ? 'selected' : ''; ?>>Boripe</option>
+            <option value="Ede North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ede North') ? 'selected' : ''; ?>>Ede North</option>
+            <option value="Ede South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ede South') ? 'selected' : ''; ?>>Ede South</option>
+            <option value="Egbedore" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Egbedore') ? 'selected' : ''; ?>>Egbedore</option>
+            <option value="Ejigbo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ejigbo') ? 'selected' : ''; ?>>Ejigbo</option>
+            <option value="Ife Central" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ife Central') ? 'selected' : ''; ?>>Ife Central</option>
+            <option value="Ife East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ife East') ? 'selected' : ''; ?>>Ife East</option>
+            <option value="Ife North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ife North') ? 'selected' : ''; ?>>Ife North</option>
+            <option value="Ife South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ife South') ? 'selected' : ''; ?>>Ife South</option>
+            <option value="Ifedayo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ifedayo') ? 'selected' : ''; ?>>Ifedayo</option>
+            <option value="Ifelodun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ifelodun') ? 'selected' : ''; ?>>Ifelodun</option>
+            <option value="Ila" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ila') ? 'selected' : ''; ?>>Ila</option>
+            <option value="Ilesha East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ilesha East') ? 'selected' : ''; ?>>Ilesha East</option>
+            <option value="Ilesha West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ilesha West') ? 'selected' : ''; ?>>Ilesha West</option>
+            <option value="Irepodun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Irepodun') ? 'selected' : ''; ?>>Irepodun</option>
+            <option value="Irewole" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Irewole') ? 'selected' : ''; ?>>Irewole</option>
+            <option value="Isokan" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Isokan') ? 'selected' : ''; ?>>Isokan</option>
+            <option value="Iwo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Iwo') ? 'selected' : ''; ?>>Iwo</option>
+            <option value="Obokun" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obokun') ? 'selected' : ''; ?>>Obokun</option>
+            <option value="Odo-Otin" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Odo-Otin') ? 'selected' : ''; ?>>Odo-Otin</option>
+            <option value="Ola-Oluwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ola-Oluwa') ? 'selected' : ''; ?>>Ola-Oluwa</option>
+            <option value="Olorunda" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Olorunda') ? 'selected' : ''; ?>>Olorunda</option>
+            <option value="Oriade" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oriade') ? 'selected' : ''; ?>>Oriade</option>
+            <option value="Orolu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Orolu') ? 'selected' : ''; ?>>Orolu</option>
+            <option value="Osogbo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Osogbo') ? 'selected' : ''; ?>>Osogbo</option>
+        </optgroup>
+         <!-- Oyo LGAs -->
+        <optgroup label="Oyo">
+            <option value="Afijio" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Afijio') ? 'selected' : ''; ?>>Afijio</option>
+            <option value="Akinyele" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akinyele') ? 'selected' : ''; ?>>Akinyele</option>
+            <option value="Atiba" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Atiba') ? 'selected' : ''; ?>>Atiba</option>
+            <option value="Atisbo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Atisbo') ? 'selected' : ''; ?>>Atisbo</option>
+            <option value="Egbeda" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Egbeda') ? 'selected' : ''; ?>>Egbeda</option>
+            <option value="Ibadan Central" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibadan Central') ? 'selected' : ''; ?>>Ibadan Central</option>
+            <option value="Ibadan North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibadan North') ? 'selected' : ''; ?>>Ibadan North</option>
+            <option value="Ibadan North West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibadan North West') ? 'selected' : ''; ?>>Ibadan North West</option>
+            <option value="Ibadan South East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibadan South East') ? 'selected' : ''; ?>>Ibadan South East</option>
+            <option value="Ibadan South West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibadan South West') ? 'selected' : ''; ?>>Ibadan South West</option>
+            <option value="Ibarapa Central" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibarapa Central') ? 'selected' : ''; ?>>Ibarapa Central</option>
+            <option value="Ibarapa East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibarapa East') ? 'selected' : ''; ?>>Ibarapa East</option>
+            <option value="Ibarapa North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ibarapa North') ? 'selected' : ''; ?>>Ibarapa North</option>
+            <option value="Ido" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ido') ? 'selected' : ''; ?>>Ido</option>
+            <option value="Irepo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Irepo') ? 'selected' : ''; ?>>Irepo</option>
+            <option value="Iseyin" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Iseyin') ? 'selected' : ''; ?>>Iseyin</option>
+            <option value="Itesiwaju" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Itesiwaju') ? 'selected' : ''; ?>>Itesiwaju</option>
+            <option value="Iwajowa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Iwajowa') ? 'selected' : ''; ?>>Iwajowa</option>
+            <option value="Kajola" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kajola') ? 'selected' : ''; ?>>Kajola</option>
+            <option value="Lagelu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Lagelu') ? 'selected' : ''; ?>>Lagelu</option>
+            <option value="Ogbomosho North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogbomosho North') ? 'selected' : ''; ?>>Ogbomosho North</option>
+            <option value="Ogbomosho South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogbomosho South') ? 'selected' : ''; ?>>Ogbomosho South</option>
+            <option value="Ogo Oluwa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogo Oluwa') ? 'selected' : ''; ?>>Ogo Oluwa</option>
+            <option value="Olorunsogo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Olorunsogo') ? 'selected' : ''; ?>>Olorunsogo</option>
+            <option value="Oluyole" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oluyole') ? 'selected' : ''; ?>>Oluyole</option>
+            <option value="Ona-Ara" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ona-Ara') ? 'selected' : ''; ?>>Ona-Ara</option>
+            <option value="Orelope" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Orelope') ? 'selected' : ''; ?>>Orelope</option>
+            <option value="Ori Ire" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ori Ire') ? 'selected' : ''; ?>>Ori Ire</option>
+            <option value="Oyo East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oyo East') ? 'selected' : ''; ?>>Oyo East</option>
+            <option value="Oyo West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oyo West') ? 'selected' : ''; ?>>Oyo West</option>
+            <option value="Saki East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Saki East') ? 'selected' : ''; ?>>Saki East</option>
+            <option value="Saki West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Saki West') ? 'selected' : ''; ?>>Saki West</option>
+            <option value="Surulere" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Surulere') ? 'selected' : ''; ?>>Surulere</option>
+        </optgroup>
+
+        <!-- Plateau LGAs -->
+        <optgroup label="Plateau">
+            <option value="Barikin Ladi" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Barikin Ladi') ? 'selected' : ''; ?>>Barikin Ladi</option>
+            <option value="Bassa" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bassa') ? 'selected' : ''; ?>>Bassa</option>
+            <option value="Bokkos" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bokkos') ? 'selected' : ''; ?>>Bokkos</option>
+            <option value="Jos East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jos East') ? 'selected' : ''; ?>>Jos East</option>
+            <option value="Jos North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jos North') ? 'selected' : ''; ?>>Jos North</option>
+            <option value="Jos South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Jos South') ? 'selected' : ''; ?>>Jos South</option>
+            <option value="Kanam" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kanam') ? 'selected' : ''; ?>>Kanam</option>
+            <option value="Kanke" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Kanke') ? 'selected' : ''; ?>>Kanke</option>
+            <option value="Langtang North" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Langtang North') ? 'selected' : ''; ?>>Langtang North</option>
+            <option value="Langtang South" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Langtang South') ? 'selected' : ''; ?>>Langtang South</option>
+            <option value="Mangu" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mangu') ? 'selected' : ''; ?>>Mangu</option>
+            <option value="Mikang" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Mikang') ? 'selected' : ''; ?>>Mikang</option>
+            <option value="Pankshin" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Pankshin') ? 'selected' : ''; ?>>Pankshin</option>
+            <option value="Qua'an Pan" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Qua\'an Pan') ? 'selected' : ''; ?>>Qua'an Pan</option>
+            <option value="Riyom" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Riyom') ? 'selected' : ''; ?>>Riyom</option>
+            <option value="Shendam" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Shendam') ? 'selected' : ''; ?>>Shendam</option>
+            <option value="Wase" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Wase') ? 'selected' : ''; ?>>Wase</option>
+        </optgroup>
+
+        <!-- Rivers LGAs -->
+        <optgroup label="Rivers">
+            <option value="Abua/Odual" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Abua/Odual') ? 'selected' : ''; ?>>Abua/Odual</option>
+            <option value="Ahoada East" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ahoada East') ? 'selected' : ''; ?>>Ahoada East</option>
+            <option value="Ahoada West" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ahoada West') ? 'selected' : ''; ?>>Ahoada West</option>
+            <option value="Akuku Toru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Akuku Toru') ? 'selected' : ''; ?>>Akuku Toru</option>
+            <option value="Andoni" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Andoni') ? 'selected' : ''; ?>>Andoni</option>
+            <option value="Asari-Toru" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Asari-Toru') ? 'selected' : ''; ?>>Asari-Toru</option>
+            <option value="Bonny" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Bonny') ? 'selected' : ''; ?>>Bonny</option>
+            <option value="Degema" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Degema') ? 'selected' : ''; ?>>Degema</option>
+            <option value="Emohua" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Emohua') ? 'selected' : ''; ?>>Emohua</option>
+            <option value="Eleme" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Eleme') ? 'selected' : ''; ?>>Eleme</option>
+            <option value="Etche" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Etche') ? 'selected' : ''; ?>>Etche</option>
+            <option value="Gokana" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Gokana') ? 'selected' : ''; ?>>Gokana</option>
+            <option value="Ikwerre" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ikwerre') ? 'selected' : ''; ?>>Ikwerre</option>
+            <option value="Khana" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Khana') ? 'selected' : ''; ?>>Khana</option>
+            <option value="Obio/Akpor" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Obio/Akpor') ? 'selected' : ''; ?>>Obio/Akpor</option>
+            <option value="Ogba/Egbema/Ndoni" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogba/Egbema/Ndoni') ? 'selected' : ''; ?>>Ogba/Egbema/Ndoni</option>
+            <option value="Ogu/Bolo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Ogu/Bolo') ? 'selected' : ''; ?>>Ogu/Bolo</option>
+            <option value="Okrika" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Okrika') ? 'selected' : ''; ?>>Okrika</option>
+            <option value="Omumma" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Omumma') ? 'selected' : ''; ?>>Omumma</option>
+            <option value="Opobo/Nkoro" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Opobo/Nkoro') ? 'selected' : ''; ?>>Opobo/Nkoro</option>
+            <option value="Oyigbo" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Oyigbo') ? 'selected' : ''; ?>>Oyigbo</option>
+            <option value="Port-Harcourt" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Port-Harcourt') ? 'selected' : ''; ?>>Port-Harcourt</option>
+            <option value="Tai" <?php echo (isset($user_data['lga']) && $user_data['lga'] == 'Tai') ? 'selected' : ''; ?>>Tai</option>
+        </optgroup>
+    </select>
+</body>
+</html>
